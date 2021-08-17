@@ -1,0 +1,42 @@
+.navbar-custom {
+   background: white;
+}
+.container .icon path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #00ffaa;
+}
+.container .icon.ethereum path {
+    stroke-dasharray: 1620;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.ethereum:hover path {
+    animation: animate-ethereum 2s linear forwards;
+}
+
+@keyframes animate-ethereum {
+    0%
+    {
+        stroke-dashoffset: 0;  
+    }
+    40%
+    {
+        stroke-dashoffset: 1620;  
+    }
+    80%
+    {
+        stroke-dashoffset: 3240; 
+        fill: transparent; 
+    }
+    100%
+    {
+        stroke-dashoffset: 3240;  
+        fill: #00ffaa;
+    }
+}
+
+.card{
+    height: 300px;
+}
+

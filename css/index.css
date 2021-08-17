@@ -1,0 +1,35 @@
+.container .icon path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: white;
+}
+
+.container .icon.bitcoin path {
+    stroke-dasharray: 1620;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.bitcoin:hover path {
+    animation: animate-bitcoin 2s linear forwards;
+}
+
+@keyframes animate-bitcoin {
+    0%
+    {
+        stroke-dashoffset: 0;  
+    }
+    40%
+    {
+        stroke-dashoffset: 1620;  
+    }
+    80%
+    {
+        stroke-dashoffset: 3240; 
+        fill: transparent; 
+    }
+    100%
+    {
+        stroke-dashoffset: 3240;  
+        fill: #ffa806;
+    }
+}

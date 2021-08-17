@@ -1,0 +1,200 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #181e2e;
+}
+
+/* icon animation */
+.container {
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .icon {
+    width: 200px;
+}
+
+.container .icon path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #ff5100;
+}
+
+.container .icon.bitcoin path {
+    stroke-dasharray: 1620;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.bitcoin:hover path {
+    animation: animate-bitcoin 2s linear forwards;
+}
+
+@keyframes animate-bitcoin {
+    0%
+    {
+        stroke-dashoffset: 0;  
+    }
+    40%
+    {
+        stroke-dashoffset: 1620;  
+    }
+    80%
+    {
+        stroke-dashoffset: 3240; 
+        fill: transparent; 
+    }
+    100%
+    {
+        stroke-dashoffset: 3240;  
+        fill: #ffa806;
+    }
+}
+
+.container .icon path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #00ffaa;
+}
+.container .icon.ethereum path {
+    stroke-dasharray: 1620;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.ethereum:hover path {
+    animation: animate-ethereum 2s linear forwards;
+}
+
+@keyframes animate-ethereum {
+    0%
+    {
+        stroke-dashoffset: 0;  
+    }
+    40%
+    {
+        stroke-dashoffset: 1620;  
+    }
+    80%
+    {
+        stroke-dashoffset: 3240; 
+        fill: transparent; 
+    }
+    100%
+    {
+        stroke-dashoffset: 3240;  
+        fill: #00ffaa;
+    }
+}
+
+.container .icon path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #ffffff;
+}
+.container .icon.ripple path {
+    stroke-dasharray: 1620;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.ripple:hover path {
+    animation: animate-ripple 2s linear forwards;
+}
+
+@keyframes animate-ripple {
+    0%
+    {
+        stroke-dashoffset: 0;  
+    }
+    40%
+    {
+        stroke-dashoffset: 1620;  
+    }
+    80%
+    {
+        stroke-dashoffset: 3240; 
+        fill: transparent; 
+    }
+    100%
+    {
+        stroke-dashoffset: 3240;  
+        fill: #8e51ff;
+    }
+}
+
+/* wavy text */
+.wavy {
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, #fff(0,0,0,0.2));
+}
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    40%, 100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* CLICK ME link Bitcoin */
+.myElement1 {
+    margin: 20px;
+    border: solid 1px transparent;
+    padding: 0.5em 1em;
+    background-color: white;   
+    text-decoration: wavy;
+    font-family:'Courier New', Courier, monospace;
+}
+.myElement1:hover {
+    color:#181e2e;
+    background-color:#ffa806;
+}
+
+/* CLICK ME link Ethereum */
+.myElement2 {
+    margin: 20px;
+    border: solid 1px transparent;
+    padding: 0.5em 1em;
+    background-color: white;   
+    text-decoration: wavy;
+    font-family:'Courier New', Courier, monospace;
+}
+.myElement2:hover {
+    color:#181e2e;
+    background-color: #00ffaa;
+}
+
+/* CLICK ME link Ripple */
+.myElement3 {
+    margin: 20px;
+    border: solid 1px transparent;
+    padding: 0.5em 1em;
+    background-color: white;   
+    text-decoration: wavy;
+    font-family:'Courier New', Courier, monospace;
+}
+.myElement3:hover {
+    color:#181e2e;
+    background-color:#8e51ff;
+}
+  
+
+
+
+
+
